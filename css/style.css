@@ -84,6 +84,13 @@ sumit.btn {
     line-height: 1em;
     vertical-align: middle;
     margin: 15px 0;
+    font-family: 'Vollkorn', serif;
+    cursor: pointer;
+    text-decoration: none;
+    -webkit-transition: all ease-in-out 200ms;
+    -moz-transition: all ease-in-out 200ms;
+    -o-transition: all ease-in-out 200ms;
+    transition: all ease-in-out 200ms;
 }
 a.btn_big,
 button.btn_big,
@@ -91,30 +98,54 @@ sumit.btn_big {
     padding: 14px 17px;
     height: 46px;
 }
-a.btn_blue {
+a.btn_blue,
+button.btn_blue,
+submit.btn_blue {
     color: #0b5f6a;
     border-color: #0b5f6a;
     background-color: transparent;
 }
-a.btn_blue:hover {
+a.btn_blue:hover,
+button.btn_blue:hover,
+submit.btn_blue:hover {
     color: #ffffff;
     background-color: #0b5f6a;
 }
-a.btn_white {
+a.btn_white,
+button.btn_blue:hover,
+submit.btn_blue:hover {
     color: #ffffff;
     border-color: #ffffff;
     background-color: transparent;
 }
-a.btn_white:hover {
+a.btn_white:hover,
+button.btn_white:hover,
+submit.btn_white:hover {
     color: #0b5f6a;
     background-color: #ffffff;
 }
-a.btn_brown {
+a.btn_brown,
+button.btn_brown,
+submit.btn_brown {
     border-color: #ffffff;
     background-color: #bd9707;
 }
-a.btn_brown:hover {
+a.btn_brown:hover,
+button.btn_brown:hover,
+submit.btn_brown:hover {
     color: #bd9707;
+    background-color: #ffffff;
+}
+a.btn_green,
+button.btn_green,
+submit.btn_green {
+    border-color: #0b5f6a;
+    background-color: #0b5f6a;
+}
+a.btn_green:hover,
+button.btn_green:hover,
+submit.btn_green:hover {
+    color: #0b5f6a;
     background-color: #ffffff;
 }
 strong, b {
@@ -230,14 +261,21 @@ input:focus:-ms-input-placeholder {
     color: #aba4a3
 }
 label {
+    font-family: 'Open Sans', sans-serif;
     text-transform: capitalize;
-    font-weight: 300;
-    font-size: 18px;
-    font-style: italic;
+    font-weight: 700;
+    font-size: 15px;
     line-height: 1em;
     margin-bottom: 3px;
     display: block;
-    color: #585858;
+    color: #383d3a;
+}
+label span.required {
+    color: #960808;
+}
+.field {
+    display: block;
+    margin: 20px 0;
 }
 .row-8 {
     margin-left: -8px;
@@ -430,26 +468,26 @@ label {
 .form-group input[type=text], 
 .form-group select, 
 .form-group textarea {
-    font-family: "basic-sans";
-    padding: 5px 15px;
+    padding: 5px 12px;
     outline: none;
     display: block;
     width: 100%;
-    border-radius: 4px;
     vertical-align: middle;
-    height: 39px;
     font-size: 14px;
     background-clip: padding-box;
     border: 1px solid #ced4da;
-   -webkit-transition: all ease-in-out 250ms;
+    -webkit-transition: all ease-in-out 250ms;
     -moz-transition: all ease-in-out 250ms;
     -o-transition: all ease-in-out 250ms;
     transition: all ease-in-out 250ms;
-    font-style: italic;
+    background-color: #f1f1f1;
+    border-color: #dfdfdf;
+    height: 32px;
+    font-family: 'Open Sans', sans-serif;
 }
 .form-group textarea {
     resize: none;
-    height: 210px;
+    height: 160px;
     padding: 12px 15px;
 }
 .form-group input[type=password]:focus, 
@@ -468,11 +506,7 @@ label {
 .form-group input[type=text]:focus, 
 .form-group select:focus, 
 .form-group textarea:focus {
-    color: #495057;
-    background-color: #fff;
-    outline: 0;
-    border-color: #48c9f1;
-    box-shadow: 0 0 9px rgba(36, 155, 192, .5);
+    border-color: #2d3940;
 }
 /**********************************************************************************/
 /******************************** HOMEPAGE BANNER *********************************/
@@ -935,4 +969,8 @@ footer.main_footer {
 .social_media_footer ul li a {
     font-size: 17px;
     color: #ffffff;
+}
+.contact_us_page .flex_xs_grid_1_12 {
+    width: 100%;
+    padding: 0 10px;
 }

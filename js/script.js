@@ -26,7 +26,6 @@ function showSlides(n) {
   dots[slideIndex-1].className += ' active';
 }
 
-
 // Initialize popup gallery
 $('.image-link').magnificPopup({
   type: 'image',
